@@ -12,7 +12,6 @@ class Vendingmachine:
 
         if cmd == "잔액":
             return "잔액은 " + str(self._change) + "원입니다"
-
         elif cmd == "동전":
             coin = params[0]
             if int(coin) not in [10, 50, 100, 500]:
@@ -20,7 +19,6 @@ class Vendingmachine:
             else:
                 self._change += int(coin)
                 return coin + "원을 넣었습니다"
-
 # 커피를 입력하고 잔액이 150원이상일 때 커피값을 빼고 "커피가 나왔습니다."
         elif cmd == "음료":
             known_beverage = "커피"
