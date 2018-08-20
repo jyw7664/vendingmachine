@@ -44,7 +44,7 @@ def test_unknown_beverage_oder():
     assert "알 수 없는 음료입니다" == m.run("음료 맥주")
     assert "잔액은 500원입니다" == m.run("잔액")
 
-def test_coin():
+def test_coin_error():
     m = Vendingmachine()
     m.run("동전 30")
     assert "알 수 없는 동전입니다" == m.run("동전 30")
