@@ -48,3 +48,4 @@ def test_coin_error():
     m = Vendingmachine()
     m.run("동전 30")
     assert "알 수 없는 동전입니다" == m.run("동전 30")
+    assert "잔액은 0원입니다" == m.run("잔액")
